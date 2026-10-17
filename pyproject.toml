@@ -1,0 +1,28 @@
+[project]
+name = "ai-beginners-embeddings"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "tomosnam", email = "tomosnam@gmail.com" }
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "ipykernel>=6.25.2",
+    "jupyterlab>=4.6.4",
+    "matplotlib>=3.7.2,<4.0.0",
+    "openai>=0.28.0,<0.29.0",
+    "pandas>=2.1.1,<3.0.0",
+    "plotly>=5.16.1,<5.17.0",
+    "python-dotenv>=1.0.0,<2.0.0",
+    "scikit-learn>=1.3.0,<2.0.0",
+    "scipy>=1.11.2,<2.0.0",
+    "tenacity>=8.2.3,<8.3.0",
+]
+
+[project.scripts]
+ai-beginners-embeddings = "ai_beginners_embeddings:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
